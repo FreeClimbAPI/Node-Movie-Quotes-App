@@ -48,7 +48,7 @@ This project serves as a guide to help you build an application with FreeClimb. 
 
    ```bash
    $ node src/app
-   Running the application on port 3000.
+   Running the application on port 80.
    ```
 
 2. Call or text your FreeClimb phone number and expect a funny movie quote in response.
