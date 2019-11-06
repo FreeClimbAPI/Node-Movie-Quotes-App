@@ -1,9 +1,9 @@
-const Persephony = require("./persy");
+const FreeClimb = require("./persy");
 const dotenv = require("dotenv");
 
 dotenv.config();
-const persephonyPhoneNumber = process.env.PERSEPHONY_PHONE_NUMBER;
-const persephonyAppId = process.env.PERSEPHONY_APP_ID;
+const freeclimbPhoneNumber = process.env.PERSEPHONY_PHONE_NUMBER;
+const freeclimbAppId = process.env.PERSEPHONY_APP_ID;
 
 const send = (deliveryMethod, destination, msg) => {
   // Replace curly Unicode quotes with their ASCII equivalent
@@ -20,9 +20,9 @@ const send = (deliveryMethod, destination, msg) => {
 
 const sendText = (msg, destination) => {
   try {
-    let persephonySDK = Persephony.sdkInit();
-    persephonySDK.api.messages
-      .create(persephonyPhoneNumber, destination, msg)
+    let freeclimbSDK = FreeClimb.sdkInit();
+    freeclimbSDK.api.messages
+      .create(freeclimbPhoneNumber, destination, msg)
       .then(function(response) {
         console.log(`Sent Text Message: ${msg}`);
       })
@@ -34,11 +34,11 @@ const sendText = (msg, destination) => {
 
 const makeCall = (msg, destination) => {
   try {
-    let persephonySDK = Persephony.sdkInit();
-    persephonySDK.api.calls
-      .create(destination, persephonyPhoneNumber, persephonyAppId)
+    let freeclimbSDK = FreeClimb.sdkInit();
+    freeclimbSDK.api.calls
+      .create(destination, freeclimbPhoneNumber, freeclimbAppId)
       .then(function(response) {
-        console.log(`Initiated a call using Persephony`);
+        console.log(`Initiated a call using FreeClimb`);
       })
       .catch(e => console.log(e));
     res.status(200).json();
