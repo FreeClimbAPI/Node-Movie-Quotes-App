@@ -2,8 +2,8 @@ const FreeClimb = require("./persy");
 const dotenv = require("dotenv");
 
 dotenv.config();
-const freeclimbPhoneNumber = process.env.PERSEPHONY_PHONE_NUMBER;
-const freeclimbAppId = process.env.PERSEPHONY_APP_ID;
+const freeclimbPhoneNumber = process.env.FREECLIMB_PHONE_NUMBER;
+const freeclimbAppId = process.env.FREECLIMB_APP_ID;
 
 const send = (deliveryMethod, destination, msg) => {
   // Replace curly Unicode quotes with their ASCII equivalent
