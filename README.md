@@ -63,6 +63,6 @@ To get started using a FreeClimb account, follow the instructions [here](https:/
    Initiated a call using FreeClimb
    ```
 
-##Getting Help
+## Getting Help
 
 If you are experiencing difficulties, [contact support](https://freeclimb.com/support).
