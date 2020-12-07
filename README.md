@@ -62,3 +62,7 @@ To get started using a FreeClimb account, follow the instructions [here](https:/
    $ node src/main call +1XXXXXXXXXX
    Initiated a call using FreeClimb
    ```
+
+## Getting Help
+
+If you are experiencing difficulties, [contact support](https://freeclimb.com/support).
