@@ -3,8 +3,8 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 const accountId = process.env.ACCOUNT_ID;
-const authToken = process.env.AUTH_TOKEN;
-const freeclimbClient = freeclimbSDK(accountId, authToken);
+const apiKey = process.env.API_KEY;
+const freeclimbClient = freeclimbSDK(accountId, apiKey);
 
 const sdkInit = () => {
   return freeclimbClient;
